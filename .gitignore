@@ -1,0 +1,57 @@
+# =========================
+# 🧠 Ren'Py / DDLC Mod
+# =========================
+
+# Archivos compilados
+*.rpyc
+*.rpyb
+
+*.psd
+
+# Archivos empaquetados (build)
+*.rpa
+
+# Saves y logs
+*.save
+*.log
+log.txt
+traceback.txt
+saves/
+cache/
+
+# =========================
+# 🖥️ Sistema operativo
+# =========================
+
+Thumbs.db
+desktop.ini
+.DS_Store
+*~
+
+# =========================
+# 🧰 IDEs / Python
+# =========================
+
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# =========================
+# 📦 Builds
+# =========================
+
+/pc/
+/linux/
+/mac/
+/android/
+*.zip
+*.tar.gz
+
+# =========================
+# ☁️ Otros
+# =========================
+
+*.tmp
+*.temp
+.env
