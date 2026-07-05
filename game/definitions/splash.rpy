@@ -260,13 +260,13 @@ label splashscreen:
         scene black
 
         menu:
-            "A previous save file has been found. Would you like to delete your save data and start over?"
-            "Yes, delete my existing data.":
-                "Deleting save data...{nw}"
+            "Se encontro archivos de guardado recientes, ¿deseas eliminarlos y empezar desde cero?"
+            "Si, eliminalo.":
+                "Eliminando...{nw}"
                 python:
                     delete_all_saves()
                     renpy.utter_restart()
-            "No, continue where I left off.":
+            "No, continuar donde lo deje.":
                 python:
                     restore_characters()
                     persistent.first_run = True
@@ -292,12 +292,11 @@ label splashscreen:
         #
         # ...Yes this even applies if your mod has no spoilers whatsoever.
         "[config.name] Este es un mod de DDLC y no esta afiliado a Team Salvato."
-        "It is designed to be played only after the official game has been completed, and contains spoilers for the official game."
-        "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: https://ddlc.moe or on Steam."
+        "Se recomienda jugar el juego antes de jugar un MOD de la comunidad."
+        "El juego lo puedes conseguir en: https://ddlc.moe."
 
         menu:
-            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
-            "I agree.":
+            "Al jugar [config.name] aceptas que puede contener spoilers y contenido sensible.":
                 $ persistent.first_run = True
 
         scene tos2
@@ -512,14 +511,13 @@ label after_load:
     if anticheat != persistent.anticheat:
         stop music
         scene black
-        "The save file could not be loaded."
-        "Are you trying to cheat?"
+        "Estas jugando un MOD?"
         $ m_name = "Monika"
         show monika 1 at t11
         if persistent.playername == "":
-            m "You're so funny."
+            m "Eres muy gracioso."
         else:
-            m "You're so funny, [persistent.playername]."
+            m "Eres muy gracoso, [persistent.playername]."
         $ renpy.utter_restart()
     else:
         # Show a hint about the skip button if it's the player's first playthrough.

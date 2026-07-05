@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 581: screen expects a non-empty block.
-    else:
-         ^
+File "game/definitions/splash.rpy", line 299: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Al jugar [config.name] aceptas que puede contener spoilers y contenido sensible."
+                                                                                      ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Sun Jul  5 02:01:26 2026
+Sun Jul  5 12:52:14 2026
