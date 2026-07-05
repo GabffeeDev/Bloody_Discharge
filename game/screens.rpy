@@ -419,14 +419,14 @@ screen quick_menu():
             yalign 0.995
 
             #textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Historia") action ShowMenu('history')
+            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Load") action ShowMenu('load')
+            textbutton _("Guardar") action ShowMenu('save')
+            textbutton _("Cagrar") action ShowMenu('load')
             #textbutton _("Q.Save") action QuickSave()
             #textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Settings") action ShowMenu('preferences')
+            textbutton _("Configuraciones") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -483,15 +483,15 @@ screen navigation():
                 if persistent.playthrough == 1:
                     textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
                 else:
-                    textbutton _("New Game") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
+                    textbutton _("Nueva Partida") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
 
             else:
 
-                textbutton _("History") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
+                textbutton _("Historia") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
 
-                textbutton _("Save Game") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
+                textbutton _("Guardar") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
 
-            textbutton _("Load Game") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
+            textbutton _("Cargar") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
 
             if enable_extras_menu:
                 textbutton _("Extras") action [ShowMenu("extras"), SensitiveIf(renpy.get_screen("extras") == None)]
@@ -502,22 +502,22 @@ screen navigation():
 
             elif not main_menu:
                 if persistent.playthrough != 3:
-                    textbutton _("Main Menu") action MainMenu()
+                    textbutton _("Menu principal") action MainMenu()
                 else:
-                    textbutton _("Main Menu") action NullAction()
+                    textbutton _("Menu principal") action NullAction()
 
-            textbutton _("Settings") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
+            textbutton _("Configuraciones") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
 
             if not enable_extras_menu:
-                textbutton _("Credits") action ShowMenu("about")
+                textbutton _("Creditos") action ShowMenu("about")
 
-            if renpy.variant("pc"):
+            if renpy.variant("PC"):
 
                 ## Help isn't necessary or relevant to mobile devices.
-                textbutton _("Help") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
+                textbutton _("Ayuda") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
 
                 ## The quit button is banned on iOS and unnecessary on Android.
-                textbutton _("Quit") action Quit(confirm=not main_menu)
+                textbutton _("Salir") action Quit(confirm=not main_menu)
         else:
             timer 1.75 action Start("autoload_yurikill")
 
@@ -703,7 +703,7 @@ screen game_menu(title, scroll=None):
     if not main_menu and persistent.playthrough == 2 and not persistent.menu_bg_m and renpy.random.randint(0, 49) == 0:
         on "show" action Show("game_menu_m")
 
-    textbutton _("Return"):
+    textbutton _("Regresar"):
         style "return_button"
 
         action Return()
@@ -1117,24 +1117,24 @@ screen ddlc_preferences():
 
             vbox:
                 style_prefix "radio"
-                label _("Display")
-                textbutton _("Windowed") action Preference("display", "window")
-                textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                label _("Pantalla")
+                textbutton _("Ventana") action Preference("display", "window")
+                textbutton _("Completa") action Preference("display", "fullscreen")
                 # textbutton _("More") action Show("display_options")
 
-        if config.developer:
-            vbox:
-                style_prefix "radio"
-                label _("Rollback Side")
-                textbutton _("Disable") action Preference("rollback side", "disable")
-                textbutton _("Left") action Preference("rollback side", "left")
-                textbutton _("Right") action Preference("rollback side", "right")
+        # if config.developer:
+        #     vbox:
+        #         style_prefix "radio"
+        #         label _("Rollback Side")
+        #         textbutton _("Disable") action Preference("rollback side", "disable")
+        #         textbutton _("Left") action Preference("rollback side", "left")
+        #         textbutton _("Right") action Preference("rollback side", "right")
 
         vbox:
             style_prefix "check"
-            label _("Skip")
-            textbutton _("Unseen Text") action Preference("skip", "toggle")
-            textbutton _("After Choices") action Preference("after choices", "toggle")
+            label _("Saltar")
+            textbutton _("Texto no visto") action Preference("skip", "toggle")
+            textbutton _("Desiciones") action Preference("after choices", "toggle")
             # textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
     
     null height (4 * gui.pref_spacing)
@@ -1146,7 +1146,7 @@ screen ddlc_preferences():
         vbox:
             
             hbox:
-                label _("Text Speed")
+                label _("Velocidad del Texto")
                 
                 null width 5
 
@@ -1156,7 +1156,7 @@ screen ddlc_preferences():
             bar value FieldValue(_preferences, "text_cps", range=180, max_is_zero=False, style="slider", offset=20)
 
             hbox:
-                label _("Auto-Forward Time")
+                label _("Automatico")
                 
                 null width 5
                 
@@ -1168,7 +1168,7 @@ screen ddlc_preferences():
             
             if config.has_music:
                 hbox:
-                    label _("Music Volume")
+                    label _("Volumen de Música")
                     
                     null width 5
                 
@@ -1180,7 +1180,7 @@ screen ddlc_preferences():
             if config.has_sound:
 
                 hbox:
-                    label _("Sound Volume")
+                    label _("Fx")
                     
                     null width 5
                 
@@ -1192,19 +1192,19 @@ screen ddlc_preferences():
                     if config.sample_sound:
                         textbutton _("Test") action Play("sound", config.sample_sound)
 
-            if config.has_voice:
-                hbox:
-                    label _("Voice Volume")
+            # if config.has_voice:
+            #     hbox:
+            #         label _("Voice Volume")
                     
-                    null width 5
+            #         null width 5
                 
-                    text str(round(preferences.get_mixer("voice") * 100)) style "value_text"
+            #         text str(round(preferences.get_mixer("voice") * 100)) style "value_text"
 
-                hbox:
-                    bar value Preference("voice volume")
+            #     hbox:
+            #         bar value Preference("voice volume")
 
-                    if config.sample_voice:
-                        textbutton _("Test") action Play("voice", config.sample_voice)
+            #         if config.sample_voice:
+            #             textbutton _("Test") action Play("voice", config.sample_voice)
 
             if config.has_music or config.has_sound or config.has_voice:
                 null height gui.pref_spacing
@@ -1217,20 +1217,20 @@ screen template_preferences():
     hbox:
         box_wrap True
 
-        if extra_settings:
-            vbox:
-                style_prefix "check"
-                label _("Game Modes")
-                textbutton _("Uncensored Mode") action If(persistent.uncensored_mode, 
-                    ToggleField(persistent, "uncensored_mode"), 
-                    Show("confirm", message="Are you sure you want to turn on Uncensored Mode?\nDoing so will enable more adult/sensitive\ncontent in your playthrough.\n\nThis setting will be dependent on the modder if\nthey programmed these checks in their story.", 
-                        yes_action=[Hide("confirm"), ToggleField(persistent, "uncensored_mode")],
-                        no_action=Hide("confirm")
-                    ))
+        # if extra_settings:
+        #     vbox:
+        #         style_prefix "check"
+        #         label _("Game Modes")
+        #         textbutton _("Uncensored Mode") action If(persistent.uncensored_mode, 
+        #             ToggleField(persistent, "uncensored_mode"), 
+        #             Show("confirm", message="Are you sure you want to turn on Uncensored Mode?\nDoing so will enable more adult/sensitive\ncontent in your playthrough.\n\nThis setting will be dependent on the modder if\nthey programmed these checks in their story.", 
+        #                 yes_action=[Hide("confirm"), ToggleField(persistent, "uncensored_mode")],
+        #                 no_action=Hide("confirm")
+        #             ))
         
         vbox:
             style_prefix "name"
-            label _("Player Name")
+            label _("Nombre de Jugador")
             
             null height 3
             
@@ -1239,7 +1239,7 @@ screen template_preferences():
             else:
                 text "[player]" xalign 0.5
             
-            textbutton _("Change Name") action Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName, launchGame=False)):
+            textbutton _("Cambiar Nombre") action Show(screen="name_input", message="Por favor ingresa tu nombre", ok_action=Function(FinishEnterName, launchGame=False)):
                 text_style "navigation_button_text"
         
         python:
@@ -1451,7 +1451,6 @@ screen history():
     use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport")):
         
         style_prefix "history"
-       
         for h in _history_list:
             
             window:
