@@ -291,7 +291,7 @@ label splashscreen:
         # get DDLC (preferably https://ddlc.moe).
         #
         # ...Yes this even applies if your mod has no spoilers whatsoever.
-        "[config.name] is a Doki Doki Literature Club fan mod that is not affiliated in anyway with Team Salvato."
+        "[config.name] Este es un mod de DDLC y no esta afiliado a Team Salvato."
         "It is designed to be played only after the official game has been completed, and contains spoilers for the official game."
         "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: https://ddlc.moe or on Steam."
 

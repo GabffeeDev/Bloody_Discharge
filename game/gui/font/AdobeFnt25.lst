@@ -1,0 +1,295 @@
+%!Adobe-FontList 1.25
+%Locale:0x300a
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Aller
+FamilyName:Aller
+StyleName:Regular
+FullName:Aller
+MenuName:Aller
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\Aller_Rg.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:134436
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,18,Aller
+NameArray:0,Mac,4,Aller
+NameArray:0,Win,1,Aller
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:F25BankPrinter
+FamilyName:F25 Bank Printer
+StyleName:Regular
+FullName:F25 Bank Printer
+MenuName:F25 Bank Printer
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\F25_Bank_Printer.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:188996
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,F25 Bank Printer
+NameArray:0,Win,1,F25 Bank Printer
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Halogen
+FamilyName:Halogen
+StyleName:Regular
+FullName:Halogen
+MenuName:Halogen
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\Halogen.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:61304
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Halogen
+NameArray:0,Win,1,Halogen
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RifficFree-Bold
+FamilyName:Riffic Free
+StyleName:Bold
+FullName:Riffic Free Bold
+MenuName:Riffic Free Medium
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\RifficFree-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:98192
+FileModTime:1782735756
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Riffic Free Bold
+NameArray:0,Win,1,Riffic Free Medium
+NameArray:0,Win,16,Riffic Free
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:BitstreamVeraSans-Roman
+FamilyName:Bitstream Vera Sans
+StyleName:Roman
+FullName:Bitstream Vera Sans
+MenuName:Bitstream Vera Sans
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\Vera.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:65932
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Bitstream Vera Sans
+NameArray:0,Win,1,Bitstream Vera Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:VerilySerifMono
+FamilyName:Verily Serif Mono
+StyleName:Book
+FullName:Verily Serif Mono
+MenuName:Verily Serif Mono
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\VerilySerifMono.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:45800
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Verily Serif Mono
+NameArray:0,Win,1,Verily Serif Mono
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Journal
+FamilyName:Journal
+StyleName:Regular
+FullName:Journal
+MenuName:Journal
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\m1.TTF
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:130956
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Journal
+NameArray:0,Win,1,Journal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:AmmysHandwriting
+FamilyName:Ammys Handwriting
+StyleName:Regular
+FullName:Ammys Handwriting
+MenuName:Ammys Handwriting
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\n1.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:46732
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Ammys Handwriting
+NameArray:0,Win,1,Ammys Handwriting
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Hashtag
+FamilyName:Hashtag
+StyleName:Regular
+FullName:Hashtag
+MenuName:Hashtag
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\s1.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:263500
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Hashtag
+NameArray:0,Win,1,Hashtag
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:JP-HandSlanted
+FamilyName:JP Hand
+StyleName:Slanted
+FullName:JP Hand Slanted
+MenuName:JP Hand
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\y1.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:84584
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,JP Hand Slanted
+NameArray:0,Win,1,JP Hand
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:asilaydying
+FamilyName:as i lay dying
+StyleName:Regular
+FullName:as i lay dying
+MenuName:as i lay dying
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\y2.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:23120
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,as i lay dying
+NameArray:0,Win,1,as i lay dying
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:DamagrafikScript-Regular
+FamilyName:Damagrafik Script
+StyleName:Regular
+FullName:Damagrafik Script Regular
+MenuName:Damagrafik Script
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\RENPY_GAMES\Bloody_Discharge\game\gui\Font\y3.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:687448
+FileModTime:1782735756
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Damagrafik Script Regular
+NameArray:0,Win,1,Damagrafik Script
+%EndFont
+
