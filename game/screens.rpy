@@ -39,7 +39,7 @@ default enable_languages = False
 
 # This controls the color of outlines in the game like
 # text, say, navigation, labels and such.
-define -2 text_outline_color = "#f8b5b0"
+define -2 text_outline_color = "#000000"
 
 ## Styles
 ################################################################################
@@ -511,13 +511,12 @@ screen navigation():
             if not enable_extras_menu:
                 textbutton _("Creditos") action ShowMenu("about")
 
-            if renpy.variant("PC"):
+            ## Recuperamos el boton "Salir" para salir al escritorio
+            textbutton _("Salir") action Quit(confirm=not main_menu)
 
-                ## Help isn't necessary or relevant to mobile devices.
-                textbutton _("Ayuda") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
+            ## Help no es nesesario siquiera.
+            ##textbutton _("Ayuda") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
 
-                ## The quit button is banned on iOS and unnecessary on Android.
-                textbutton _("Salir") action Quit(confirm=not main_menu)
         else:
             timer 1.75 action Start("autoload_yurikill")
 
@@ -536,9 +535,9 @@ style navigation_button_text:
     font "gui/font/RifficFree-Bold.ttf"
     color "#fff"
     outlines [(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]
-    #outlines [(4, "#b59", 0, 0), (2, "#b59", 2, 2)]
-    hover_outlines [(4, "#fac", 0, 0), (2, "#fac", 2, 2)]
-    insensitive_outlines [(4, "#fce", 0, 0), (2, "#fce", 2, 2)]
+    #outlines [(4, "#201f16", 0, 0), (2, "#b59", 2, 2)]
+    hover_outlines [(4, "#d253c3", 0, 0), (2, "#a543b4", 2, 2)]
+    insensitive_outlines [(4, "#96138b", 0, 0), (2, "#571160", 2, 2)]
 
 
 ## Main Menu screen ############################################################
@@ -554,14 +553,18 @@ screen main_menu():
 
     style_prefix "main_menu"
 
+    add "atardecer"
+
+    add "cutter"
+
     if persistent.ghost_menu:
         add "white"
         add "menu_art_y_ghost"
         add "menu_art_n_ghost"
     else:
-        add "menu_bg"
-        add "menu_art_y"
-        add "menu_art_n"
+        #add "menu_bg"
+        #add "menu_art_y"
+        #add "menu_art_n"
         frame
 
         ## The use statement includes another screen inside this one. The actual
@@ -579,11 +582,11 @@ screen main_menu():
     else:
         if persistent.playthrough == 1 or persistent.playthrough == 2:
             add "menu_art_s_glitch"
-        else:
-            add "menu_art_s"
+        #else:
+            #add "menu_art_s"
         add "menu_particles"
-        if persistent.playthrough != 4:
-            add "menu_art_m"
+        #if persistent.playthrough != 4:
+            #add "menu_art_m"
         add "menu_fade"
 
     if gui.show_name:

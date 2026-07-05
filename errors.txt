@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 581: screen expects a non-empty block.
+    else:
+         ^
+
+Ren'Py Version: Ren'Py 8.5.3.26051504
+Sun Jul  5 02:01:26 2026

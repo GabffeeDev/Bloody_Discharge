@@ -26,25 +26,51 @@ image menu_bg:
     menu_bg_move
 
 # This image shows the pause menu polka-dot image.
-image game_menu_bg:
-    topleft
-    "gui/menu_bg.png"
-    # recolorize("gui/menu_bg.png", "#ffdbf0", "#fff", 1)
-    menu_bg_loop
+#image game_menu_bg:
+#    topleft
+#    "gui/menu_bg.png"
+#    # recolorize("gui/menu_bg.png", "#ffdbf0", "#fff", 1)
+#    menu_bg_loop
 
 # This image transform shows the white fading effect in the main menu.
 image menu_fade:
     "white"
     menu_fadeout
 
+# no cute, cutter (reite)
+image cutter:
+    subpixel True
+    "gui/cutter.png"
+    xcenter 855
+    ycenter 380
+    zoom 0.75
+    menu_art_move(1.20, 900, 0.75) # (velocidad de aparicion, eje Y, zoom)
+
+# cute
+image atardecer:
+    subpixel True
+    "gui/atardecer.png"
+    xcenter 690
+    ycenter 380
+    zoom 0.90
+
+# Antigua yuri
+#image menu_art_y:
+#    subpixel True
+#    "gui/menu_art_y.png"
+#    xcenter 575
+#    ycenter 600
+#    zoom 1.00
+#    menu_art_move(0.54, 600, 1.00)
+
 # These images show each respective characters' menu sprite and positions/animations.
 image menu_art_y:
     subpixel True
-    "gui/menu_art_y.png"
-    xcenter 600
-    ycenter 335
-    zoom 0.60
-    menu_art_move(0.54, 600, 0.60)
+    "gui/yuri.png"
+    xcenter 575
+    ycenter 600
+    zoom 0.50
+    menu_art_move(0.54, 600, 0.50)
 
 image menu_art_n:
     subpixel True
@@ -185,7 +211,7 @@ transform menu_art_move(z, x, z2):
     subpixel True
     yoffset 0 + (1200 * z)
     xoffset (740 - x) * z * 0.5
-    zoom z2 * 0.75
+    #zoom z2 * 0.75
     time 1.0
     parallel:
         ease 1.75 yoffset 0
