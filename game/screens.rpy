@@ -39,7 +39,7 @@ default enable_languages = False
 
 # This controls the color of outlines in the game like
 # text, say, navigation, labels and such.
-define -2 text_outline_color = "#b59"
+define -2 text_outline_color = "#f8b5b0"
 
 ## Styles
 ################################################################################
@@ -93,7 +93,7 @@ style poemgame_text:
     outlines []
 
     hover_xoffset -3
-    hover_outlines [(3, "#fef", 0, 0), (2, "#fcf", 0, 0), (1, "#faf", 0, 0)]
+    hover_outlines [(3, "#fff3ee", 0, 0), (2, "#fcf", 0, 0), (1, "#faf", 0, 0)]
 
 style gui_text:
     font gui.interface_font
@@ -264,7 +264,7 @@ image ctc:
 ## http://www.renpy.org/doc/html/screen_special.html#input
 
 image input_caret:
-    Solid("#b59")
+    Solid("#bb5599")
     size (2,25) subpixel True
     block:
         linear 0.35 alpha 0

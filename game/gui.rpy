@@ -30,10 +30,10 @@ define -2 gui.idle_color = '#aaaaaa'
 define -2 gui.idle_small_color = '#333'
 
 # This color is that is used for buttons and bars that are hovered.
-define -2 gui.hover_color = '#cc6699'
+define -2 gui.hover_color = '#ff9100'
 
 # This color is used for a text button when it is selected but not focused.
-define -2 gui.selected_color = '#bb5588'
+define -2 gui.selected_color = '#f8a765'
 
 # This color is used for a text button when it cannot be selected.
 define -2 gui.insensitive_color = '#aaaaaa7f'
@@ -174,8 +174,8 @@ define gui.page_button_borders = Borders(10, 4, 10, 4)
 
 define gui.quick_button_text_size = 14
 
-define gui.quick_button_text_idle_color = "#522"
-define gui.quick_button_text_hover_color = "#fcc"
+define gui.quick_button_text_idle_color = "#ff6f6f"
+define gui.quick_button_text_hover_color = "#ff3e3e"
 define gui.quick_button_text_selected_color = gui.accent_color
 define gui.quick_button_text_insensitive_color = "#a66"
 
