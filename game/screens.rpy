@@ -1320,7 +1320,7 @@ screen preferences():
 
     default ddlc_settings = True
 
-    use game_menu(_("Settings"), scroll="viewport"):
+    use game_menu(_("Configuraciones"), scroll="viewport"):
 
         vbox:
             xoffset 50
@@ -1329,8 +1329,8 @@ screen preferences():
                 style_prefix "navigation"
                 xoffset 150
                 spacing 5
-                textbutton _("DDLC Settings") action [SetScreenVariable("ddlc_settings", True), SensitiveIf(not ddlc_settings)]
-                textbutton _("Template Settings") action [SetScreenVariable("ddlc_settings", False), SensitiveIf(ddlc_settings)]
+                textbutton _("Ajustes Generales") action [SetScreenVariable("ddlc_settings", True), SensitiveIf(not ddlc_settings)]
+                textbutton _("Ajustes de Jugador") action [SetScreenVariable("ddlc_settings", False), SensitiveIf(ddlc_settings)]
             
             null height 10
 
