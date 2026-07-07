@@ -44,7 +44,7 @@ image cutter:
     xcenter 855
     ycenter 380
     zoom 0.75
-    menu_art_move(1.20, 900, 0.75) # (velocidad de aparicion, eje Y, zoom)
+    menu_art_move(4.5, -900, 0.75) # (velocidad de aparicion, eje Y, zoom)
 
 # cute
 image atardecer:
@@ -209,14 +209,14 @@ transform menu_fadeout:
 # sprites to where they appear in the game.
 transform menu_art_move(z, x, z2):
     subpixel True
-    yoffset 0 + (1200 * z)
+    #yoffset 0 + (1200 * z)
     xoffset (740 - x) * z * 0.5
-    #zoom z2 * 0.75
+    #zoom z2 * 0.75   en python z2 y z como son? hola?
     time 1.0
     parallel:
         ease 1.75 yoffset 0
     parallel:
-        pause 0.75
+        pause 0.20
         ease 1.5 zoom z2 xoffset 0
 
 ## Team Salvato Splash Screen

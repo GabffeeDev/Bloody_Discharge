@@ -1,6 +1,12 @@
 # Copyright 2019-2025 Azariel Del Carmen (bronya_rand). All rights reserved.
 # This file defines the placements and animations in DDLC.
 
+#yuri rica bebe
+transform yuri_chibi:
+    xalign 0.5 yalign 1.0
+    zoom 0.2
+    ypos 225
+
 # This transform sizes the character properly at the given X position.
 transform tcommon(x=640, z=0.80):
     yanchor 1.0 subpixel True

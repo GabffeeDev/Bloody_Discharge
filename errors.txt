@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/definitions/splash.rpy", line 299: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Al jugar [config.name] aceptas que puede contener spoilers y contenido sensible."
-                                                                                      ^
+File "game/screens.rpy", line 480: expected statement.
+    first_splash = False
+                 ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Sun Jul  5 12:52:14 2026
+Mon Jul  6 01:42:36 2026

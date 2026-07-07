@@ -466,15 +466,30 @@ init python:
         if launchGame:
             renpy.jump_out_of_context("start")
 
+default first_splash = True
+
+
+transform vbox_navegation_move:
+    subpixel True
+    xoffset -275
+    time 1.0
+    parallel:
+        ease 1.00 yoffset 0
+    parallel:
+        ease 0.1 zoom 1.0 xoffset 0
+
 screen navigation():
 
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
+        ypos 500
+        xpos gui.navigation_xpos - 40
         yalign 0.8
 
         spacing gui.navigation_spacing
+
+        on "show" action SetVariable("first_splash", False)
 
         if not persistent.autoload or not main_menu:
 
@@ -520,6 +535,61 @@ screen navigation():
         else:
             timer 1.75 action Start("autoload_yurikill")
 
+# El navigations del menu (la caja de las opciones del menu)
+#TODO: ARREGLAR ESTA PORQUERIAAAAAA
+screen title_navigation():
+
+    vbox at (vbox_navegation_move if first_splash else vbox_navegation_rigid):
+        style_prefix "navigation"
+
+        ypos 500
+        
+        xpos gui.navigation_xpos - 40
+
+        yalign 0.8
+
+        spacing gui.navigation_spacing
+
+        if not persistent.autoload or not main_menu:
+
+            if main_menu:
+
+                textbutton _("Nueva Partida") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
+
+            else:
+
+                textbutton _("Historia") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
+
+                textbutton _("Guardar") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
+
+            textbutton _("Cargar") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
+
+            if enable_extras_menu:
+                textbutton _("Extras") action [ShowMenu("extras"), SensitiveIf(renpy.get_screen("extras") == None)]
+
+            if _in_replay:
+
+                textbutton _("End Replay") action EndReplay(confirm=True)
+
+            elif not main_menu:
+                if persistent.playthrough != 3:
+                    textbutton _("Menu principal") action MainMenu()
+                else:
+                    textbutton _("Menu principal") action NullAction()
+
+            textbutton _("Configuraciones") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
+
+            if not enable_extras_menu:
+                textbutton _("Creditos") action ShowMenu("about")
+
+            ## Recuperamos el boton "Salir" para salir al escritorio
+            textbutton _("Salir") action Quit(confirm=not main_menu)
+
+            ## Help no es nesesario siquiera.
+            ##textbutton _("Ayuda") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
+
+        else:
+            timer 1.75 action Start("autoload_yurikill")
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -557,37 +627,18 @@ screen main_menu():
 
     add "cutter"
 
-    if persistent.ghost_menu:
-        add "white"
-        add "menu_art_y_ghost"
-        add "menu_art_n_ghost"
-    else:
-        #add "menu_bg"
-        #add "menu_art_y"
-        #add "menu_art_n"
-        frame
+    frame
 
-        ## The use statement includes another screen inside this one. The actual
-        ## contents of the main menu are in the navigation screen.
-        use navigation
-
-    if not persistent.ghost_menu:
-        add "menu_particles"
-        add "menu_particles"
-        add "menu_particles"
-        add "menu_logo"
-    if persistent.ghost_menu:
-        add "menu_art_s_ghost"
-        add "menu_art_m_ghost"
-    else:
-        if persistent.playthrough == 1 or persistent.playthrough == 2:
-            add "menu_art_s_glitch"
-        #else:
-            #add "menu_art_s"
-        add "menu_particles"
-        #if persistent.playthrough != 4:
-            #add "menu_art_m"
-        add "menu_fade"
+    ## The use statement includes another screen inside this one. The actual
+    ## contents of the main menu are in the navigation screen.
+    use title_navigation
+  
+    add "menu_particles"
+    add "menu_particles"
+    add "menu_particles"
+    add "menu_logo"
+    add "menu_particles"
+    add "menu_fade"
 
     if gui.show_name:
 
@@ -652,6 +703,7 @@ screen game_menu(title, scroll=None):
     # Add the backgrounds.
     if main_menu:
         add gui.main_menu_background
+        
     else:
         key "mouseup_3" action Return()
         add gui.game_menu_background
@@ -666,7 +718,7 @@ screen game_menu(title, scroll=None):
             # Reserve space for the navigation section.
             frame:
                 style "game_menu_navigation_frame"
-
+                add "gui/Yuri_chibi.png" at yuri_chibi
             frame:
                 style "game_menu_content_frame"
 
