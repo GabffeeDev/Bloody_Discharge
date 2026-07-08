@@ -186,10 +186,8 @@ label start:
     #     call ch40_main
     #     jump credits
 
-    jump Act_1
+    jump Acto_1
 
-label Act_1:
-    "Hola"
 
 # This label is where the game 'ends' during Act 1.
 label endgame(pause_length=4.0):

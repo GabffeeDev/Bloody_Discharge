@@ -10,6 +10,7 @@
 
 # Archivos empaquetados (build)
 *.rpa
+*.bat
 
 # Saves y logs
 *.save
