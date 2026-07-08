@@ -470,13 +470,8 @@ default first_splash = True
 
 
 transform vbox_navegation_move:
-    subpixel True
-    xoffset -275
-    time 1.0
-    parallel:
-        ease 1.00 yoffset 0
-    parallel:
-        ease 0.1 zoom 1.0 xoffset 0
+    alpha 0.0
+    linear 0.2 alpha 1.0
 
 screen navigation():
 
@@ -539,7 +534,8 @@ screen navigation():
 #TODO: ARREGLAR ESTA PORQUERIAAAAAA
 screen title_navigation():
 
-    vbox at (vbox_navegation_move if first_splash else vbox_navegation_rigid):
+    # vbox at (vbox_navegation_move if first_splash else vbox_navegation_rigid):
+    vbox at vbox_navegation_move:
         style_prefix "navigation"
 
         ypos 500
@@ -616,6 +612,7 @@ style navigation_button_text:
 ##
 ## http://www.renpy.org/doc/html/screen_special.html#main-menu
 
+
 screen main_menu():
 
     # This ensures that any other menu screen is replaced.
@@ -625,14 +622,14 @@ screen main_menu():
 
     add "atardecer"
 
-    add "cutter"
+    add "cutter" 
 
     frame
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use title_navigation
-  
+    
     add "menu_particles"
     add "menu_particles"
     add "menu_particles"
