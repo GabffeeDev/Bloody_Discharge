@@ -2,8 +2,6 @@
 # This is where the splashscreen, disclaimer and menu code reside in.
 
 
-ESTAS AHI? LEE DS
-
 init python:
     import random
 
