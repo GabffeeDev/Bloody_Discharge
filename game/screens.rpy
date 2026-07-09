@@ -624,6 +624,8 @@ screen main_menu():
 
     add "cutter" 
 
+    use lluvia
+
     frame
 
     ## The use statement includes another screen inside this one. The actual

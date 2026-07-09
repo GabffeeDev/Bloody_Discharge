@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 629: the at keyword argument was not given a value.
-    add "cutter" at
-                    ^
+File "game/definitions/splash.rpy", line 5: expected statement.
+    ESTAS AHI? LEE DS
+             ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Wed Jul  8 13:49:40 2026
+Wed Jul  8 21:13:29 2026

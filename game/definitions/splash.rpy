@@ -1,6 +1,52 @@
 # Copyright 2019-2025 Azariel Del Carmen (bronya_rand). All rights reserved.
 # This is where the splashscreen, disclaimer and menu code reside in.
 
+
+ESTAS AHI? LEE DS
+
+init python:
+    import random
+
+    RAIN_W = 1280 #no tocar nesesariamente
+    RAIN_H = 720 # sexi
+    RAIN_COUNT = 40 #conteo sexual
+
+    rain = []
+
+    def rain_reset(drop):
+        drop["x"] = random.randint(0, RAIN_W)
+        drop["y"] = random.randint(-RAIN_H, 0)
+        drop["speed"] = random.randint(25, 45) # velocidad, usa 2 numeros random
+        drop["drift"] = random.randint(-1, 1)
+
+    for i in range(RAIN_COUNT):
+        d = {}
+        rain_reset(d)
+        rain.append(d)
+
+    def rain_update():
+        for d in rain:
+            d["x"] += d["drift"]
+            d["y"] += d["speed"]
+
+            if d["y"] > RAIN_H + 20:
+                rain_reset(d)
+                d["y"] = -20
+
+screen lluvia():
+
+    timer 0.016 repeat True action Function(rain_update)
+
+    fixed:
+        xsize 1280
+        ysize 720
+
+        for d in rain:
+
+            add "gui/gotita.png":
+                xpos d["x"]
+                ypos d["y"]
+
 # This image text shows the splash message when the game loads.
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
@@ -205,14 +251,12 @@ transform menu_fadeout:
     alpha 0.4
     linear 0.5 alpha 0
 
-# This transform takes in a z-axis, x-axis and zoom numbers and moves the menu
-# sprites to where they appear in the game.
+# TODO: Animacion de movimiento del cutter. esta misma afecta a los artes de Natsuki, Yuri,
+# Monika y Sayori en la pantalla de Titulo, En teoria se requiero aun modificarlo... no?
 transform menu_art_move(z, x, z2):
     subpixel True
-    #yoffset 0 + (1200 * z)
     xoffset (740 - x) * z * 0.5
-    #zoom z2 * 0.75   en python z2 y z como son? hola?
-    time 1.0
+    yoffset 500
     parallel:
         ease 1.75 yoffset 0
     parallel:
