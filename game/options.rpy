@@ -24,7 +24,7 @@ define gui.about = _("")
 # Note:
 #   The build name is ASCII only so no numbers, spaces, or semicolons.
 #   Example: Doki Doki Yuri Time to DokiDokiYuriTime
-define build.name = "Bloody Discharge"
+define build.name = "BloodyDischarge"
 
 # This configures whether your mod has sound effects.
 define config.has_sound = True

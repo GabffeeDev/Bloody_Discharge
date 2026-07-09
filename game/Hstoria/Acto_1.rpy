@@ -63,4 +63,4 @@ label Acto_1:
             show yuri 4bb at tinstant
             "para que mire a otro lado sera el número 4"
 
-        "Continuar a la historia:"
+

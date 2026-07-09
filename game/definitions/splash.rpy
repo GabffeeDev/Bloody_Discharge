@@ -84,11 +84,11 @@ image menu_fade:
 # no cute, cutter (reite)
 image cutter:
     subpixel True
-    "gui/cutter.png"
+    "gui/Knife_yuri.png"
     xcenter 855
     ycenter 380
-    zoom 0.75
-    menu_art_move(4.5, -900, 0.75) # (velocidad de aparicion, eje Y, zoom)
+    zoom 0.5
+    menu_art_move(4.5, -900, 0.5) # (velocidad de aparicion, eje Y, zoom)
 
 # cute
 image atardecer:

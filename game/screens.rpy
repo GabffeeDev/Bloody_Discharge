@@ -705,7 +705,7 @@ screen game_menu(title, scroll=None):
         
     else:
         key "mouseup_3" action Return()
-        add gui.game_menu_background
+        # add gui.game_menu_background
 
     style_prefix "game_menu"
 
