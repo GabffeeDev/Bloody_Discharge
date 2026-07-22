@@ -418,7 +418,7 @@ screen quick_menu():
             xalign 0.5
             yalign 0.995
 
-            #textbutton _("Back") action Rollback()
+            textbutton _("Atras") action Rollback()
             textbutton _("Historia") action ShowMenu('history')
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
