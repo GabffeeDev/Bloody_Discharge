@@ -530,62 +530,6 @@ screen navigation():
         else:
             timer 1.75 action Start("autoload_yurikill")
 
-# El navigations del menu (la caja de las opciones del menu)
-#TODO: ARREGLAR ESTA PORQUERIAAAAAA
-screen title_navigation():
-
-    # vbox at (vbox_navegation_move if first_splash else vbox_navegation_rigid):
-    vbox at vbox_navegation_move:
-        style_prefix "navigation"
-
-        ypos 500
-        
-        xpos gui.navigation_xpos - 40
-
-        yalign 0.8
-
-        spacing gui.navigation_spacing
-
-        if not persistent.autoload or not main_menu:
-
-            if main_menu:
-
-                textbutton _("Nueva Partida") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
-
-            else:
-
-                textbutton _("Historia") action [ShowMenu("history"), SensitiveIf(renpy.get_screen("history") == None)]
-
-                textbutton _("Guardar") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
-
-            textbutton _("Cargar") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
-
-            if enable_extras_menu:
-                textbutton _("Extras") action [ShowMenu("extras"), SensitiveIf(renpy.get_screen("extras") == None)]
-
-            if _in_replay:
-
-                textbutton _("End Replay") action EndReplay(confirm=True)
-
-            elif not main_menu:
-                if persistent.playthrough != 3:
-                    textbutton _("Menu principal") action MainMenu()
-                else:
-                    textbutton _("Menu principal") action NullAction()
-
-            textbutton _("Configuraciones") action [ShowMenu("preferences"), SensitiveIf(renpy.get_screen("preferences") == None)]
-
-            if not enable_extras_menu:
-                textbutton _("Creditos") action ShowMenu("about")
-
-            ## Recuperamos el boton "Salir" para salir al escritorio
-            textbutton _("Salir") action Quit(confirm=not main_menu)
-
-            ## Help no es nesesario siquiera.
-            ##textbutton _("Ayuda") action [Help("README.html"), Show(screen="dialog", message="The help file has been opened in your browser.", ok_action=Hide("dialog"))]
-
-        else:
-            timer 1.75 action Start("autoload_yurikill")
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -599,10 +543,9 @@ style navigation_button:
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
     font "gui/font/RifficFree-Bold.ttf"
-    color "#fff"
-    outlines [(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]
-    #outlines [(4, "#201f16", 0, 0), (2, "#b59", 2, 2)]
-    hover_outlines [(4, "#d253c3", 0, 0), (2, "#a543b4", 2, 2)]
+    color "#ffffff"
+    outlines [(4, "#000000", 0, 0), (2, "#000000", 2, 2)]
+    hover_outlines [(4, "#b43bcc", 0, 0), (2, "#a543b4", 2, 2)]
     insensitive_outlines [(4, "#96138b", 0, 0), (2, "#571160", 2, 2)]
 
 
@@ -622,7 +565,7 @@ screen main_menu():
 
     add "atardecer"
 
-    add "cutter" 
+    add "cutter"
 
     use lluvia
 
@@ -630,7 +573,7 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use title_navigation
+    use navigation
     
     add "menu_particles"
     add "menu_particles"
@@ -814,8 +757,8 @@ style game_menu_label_text:
     font "gui/font/RifficFree-Bold.ttf"
     size gui.title_text_size
     color "#fff"
-    outlines [(6, text_outline_color, 0, 0), (3, text_outline_color, 2, 2)]
-    #outlines [(6, "#b59", 0, 0), (3, "#b59", 2, 2)]
+    # outlines [(6, text_outline_color, 0, 0), (3, text_outline_color, 2, 2)]
+    outlines [(6, "#000000", 0, 0), (3, "#000000", 2, 2)]
     yalign 0.5
 
 style return_button:

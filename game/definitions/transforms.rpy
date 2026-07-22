@@ -4,8 +4,9 @@
 #yuri rica bebe
 transform yuri_chibi:
     xalign 0.5 yalign 1.0
-    zoom 0.2
-    ypos 225
+    zoom 0.16
+    xpos 100
+    ypos 165
 
 # This transform sizes the character properly at the given X position.
 transform tcommon(x=640, z=0.80):

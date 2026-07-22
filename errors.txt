@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/definitions/splash.rpy", line 5: expected statement.
-    ESTAS AHI? LEE DS
-             ^
+File "game/definitions/transforms.rpy", line 8: expected 'simple_expression' not found.
+    xpos
+         ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Wed Jul  8 19:15:12 2026
+Wed Jul 22 06:56:52 2026

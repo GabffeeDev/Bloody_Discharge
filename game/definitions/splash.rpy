@@ -14,7 +14,7 @@ init python:
     def rain_reset(drop):
         drop["x"] = random.randint(0, RAIN_W)
         drop["y"] = random.randint(-RAIN_H, 0)
-        drop["speed"] = random.randint(25, 45) # velocidad, usa 2 numeros random
+        drop["speed"] = random.randint(22, 22) # velocidad, usa 2 numeros random
         drop["drift"] = random.randint(-1, 1)
 
     for i in range(RAIN_COUNT):
@@ -33,7 +33,7 @@ init python:
 
 screen lluvia():
 
-    timer 0.016 repeat True action Function(rain_update)
+    timer 0.033 repeat True action Function(rain_update)
 
     fixed:
         xsize 1280
@@ -84,11 +84,10 @@ image menu_fade:
 # no cute, cutter (reite)
 image cutter:
     subpixel True
-    "gui/Knife_yuri.png"
+    "gui/cutter.png"
     xcenter 855
     ycenter 380
-    zoom 0.5
-    menu_art_move(4.5, -900, 0.5) # (velocidad de aparicion, eje Y, zoom)
+    menu_art_move(4.5, -900, 0.8) # (velocidad de aparicion, eje Y, zoom)
 
 # cute
 image atardecer:
