@@ -10,23 +10,26 @@ label .memories_mc:
     "..."
     "..."
     "..."
-    stop music fadeout 0.5
+    stop music fadeout 0.3
     scene bg bedroom
+    play music winter
     with fade
     "Me levanto, apago el despertador, miro a mi alrededor buscando consuelo."
     "Pero solo veo mi habitación desordenada y una vieja foto de Sayori en mi mesa de noche."
+    pause 1.0
+    scene cg sayorisky
+    with fade
     "¿El cielo es bonito, verdad?..."
-    "Me recuerda a ella."
+    "Me recuerda a 'ella.'"
     "A sus ojos llenos de luz."
     "A su sonrisa."
     "A esa voz que hacía parecer más ligeros los días."
     pause 0.5
+    scene cg sayorirain
+    with Dissolve(0.2)
     "..."
     "Solo quiero que el mundo se detenga un momento."
     "Pero eso es imposible."
-    "..."
-    scene black
-    with fade
     pause 0.5
     "¿Cuándo mi cabeza me dejará en paz?"
     "Hay recuerdos que nunca dejan de volver."
@@ -45,12 +48,15 @@ label .memories_mc:
 label .yuri_appears:
     scene bg bedroom
     with dissolve
+    stop music
+    play sound door
     # Golpes de puerta
     "Alguien golpea la puerta de mi casa."
     "Mi apariencia no era la adecuada para recibir visitas."
     "Baje la mirada."
     "Llevaba la misma ropa de ayer y no me había duchado."
     "Pero de todas formas abrí la puerta."
+    play music morning fadein 0.2
     scene bg residential_day
     show yuri 1bq at tinstant
     with fade
@@ -115,6 +121,8 @@ label .yuri_appears:
     "Pero no salió ninguna palabra."
     "Entonces rompí a llorar."
     y "..."
+    scene cg yurihuge
+    with fade
     y "[player]..."
     pause 0.5
     "Yuri me rodea con sus brazos, apoya su cabeza en mi hombro."

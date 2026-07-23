@@ -2,9 +2,163 @@
 errors listed below, and try again.
 
 
-File "game/definitions/transforms.rpy", line 8: expected 'simple_expression' not found.
-    xpos
-         ^
+File "game/mod_assets/History/Act_1.rpy", line 10: Line with id Act_1_memories_mc_a20cefa7 appears twice. The other line is game/History/Act_1.rpy:10
+
+File "game/mod_assets/History/Act_1.rpy", line 11: Line with id Act_1_memories_mc_a20cefa7_1 appears twice. The other line is game/History/Act_1.rpy:11
+
+File "game/mod_assets/History/Act_1.rpy", line 12: Line with id Act_1_memories_mc_a20cefa7_2 appears twice. The other line is game/History/Act_1.rpy:12
+
+File "game/mod_assets/History/Act_1.rpy", line 17: Line with id Act_1_memories_mc_d15ebfe5 appears twice. The other line is game/History/Act_1.rpy:16
+
+File "game/mod_assets/History/Act_1.rpy", line 18: Line with id Act_1_memories_mc_f1f8f8f8 appears twice. The other line is game/History/Act_1.rpy:17
+
+File "game/mod_assets/History/Act_1.rpy", line 22: Line with id Act_1_memories_mc_2490f03a appears twice. The other line is game/History/Act_1.rpy:18
+
+File "game/mod_assets/History/Act_1.rpy", line 24: Line with id Act_1_memories_mc_c1cad1fa appears twice. The other line is game/History/Act_1.rpy:20
+
+File "game/mod_assets/History/Act_1.rpy", line 25: Line with id Act_1_memories_mc_e36f22cb appears twice. The other line is game/History/Act_1.rpy:21
+
+File "game/mod_assets/History/Act_1.rpy", line 26: Line with id Act_1_memories_mc_7fdec8af appears twice. The other line is game/History/Act_1.rpy:22
+
+File "game/mod_assets/History/Act_1.rpy", line 30: Line with id Act_1_memories_mc_a20cefa7_3 appears twice. The other line is game/History/Act_1.rpy:24
+
+File "game/mod_assets/History/Act_1.rpy", line 31: Line with id Act_1_memories_mc_9f1260d5 appears twice. The other line is game/History/Act_1.rpy:25
+
+File "game/mod_assets/History/Act_1.rpy", line 32: Line with id Act_1_memories_mc_407391da appears twice. The other line is game/History/Act_1.rpy:26
+
+File "game/mod_assets/History/Act_1.rpy", line 34: Line with id Act_1_memories_mc_e03ff996 appears twice. The other line is game/History/Act_1.rpy:31
+
+File "game/mod_assets/History/Act_1.rpy", line 35: Line with id Act_1_memories_mc_19fc62e7 appears twice. The other line is game/History/Act_1.rpy:32
+
+File "game/mod_assets/History/Act_1.rpy", line 36: Line with id Act_1_memories_mc_a20cefa7_4 appears twice. The other line is game/History/Act_1.rpy:27
+
+File "game/mod_assets/History/Act_1.rpy", line 37: Line with id Act_1_memories_mc_65439043 appears twice. The other line is game/History/Act_1.rpy:34
+
+File "game/mod_assets/History/Act_1.rpy", line 38: Line with id Act_1_memories_mc_00e9e12d appears twice. The other line is game/History/Act_1.rpy:35
+
+File "game/mod_assets/History/Act_1.rpy", line 39: Line with id Act_1_memories_mc_30bf1eac appears twice. The other line is game/History/Act_1.rpy:36
+
+File "game/mod_assets/History/Act_1.rpy", line 40: Line with id Act_1_memories_mc_bd5305fb appears twice. The other line is game/History/Act_1.rpy:37
+
+File "game/mod_assets/History/Act_1.rpy", line 41: Line with id Act_1_memories_mc_1d9d7633 appears twice. The other line is game/History/Act_1.rpy:38
+
+File "game/mod_assets/History/Act_1.rpy", line 43: Line with id Act_1_memories_mc_7f5c2ccf appears twice. The other line is game/History/Act_1.rpy:40
+
+File "game/mod_assets/History/Act_1.rpy", line 45: Line with id Act_1_memories_mc_a20cefa7_5 appears twice. The other line is game/History/Act_1.rpy:33
+
+File "game/mod_assets/History/Act_1.rpy", line 54: Line with id Act_1_yuri_appears_b293d713 appears twice. The other line is game/History/Act_1.rpy:49
+
+File "game/mod_assets/History/Act_1.rpy", line 55: Line with id Act_1_yuri_appears_d0f1db02 appears twice. The other line is game/History/Act_1.rpy:50
+
+File "game/mod_assets/History/Act_1.rpy", line 56: Line with id Act_1_yuri_appears_43a97df7 appears twice. The other line is game/History/Act_1.rpy:51
+
+File "game/mod_assets/History/Act_1.rpy", line 57: Line with id Act_1_yuri_appears_212b047a appears twice. The other line is game/History/Act_1.rpy:52
+
+File "game/mod_assets/History/Act_1.rpy", line 58: Line with id Act_1_yuri_appears_540d3c8e appears twice. The other line is game/History/Act_1.rpy:53
+
+File "game/mod_assets/History/Act_1.rpy", line 63: Line with id Act_1_yuri_appears_099436bb appears twice. The other line is game/History/Act_1.rpy:57
+
+File "game/mod_assets/History/Act_1.rpy", line 64: Line with id Act_1_yuri_appears_cb050a01 appears twice. The other line is game/History/Act_1.rpy:58
+
+File "game/mod_assets/History/Act_1.rpy", line 65: Line with id Act_1_yuri_appears_0c125191 appears twice. The other line is game/History/Act_1.rpy:59
+
+File "game/mod_assets/History/Act_1.rpy", line 66: Line with id Act_1_yuri_appears_c3789594 appears twice. The other line is game/History/Act_1.rpy:60
+
+File "game/mod_assets/History/Act_1.rpy", line 67: Line with id Act_1_yuri_appears_25d0e77f appears twice. The other line is game/History/Act_1.rpy:61
+
+File "game/mod_assets/History/Act_1.rpy", line 68: Line with id Act_1_yuri_appears_02f0e095 appears twice. The other line is game/History/Act_1.rpy:62
+
+File "game/mod_assets/History/Act_1.rpy", line 70: Line with id Act_1_yuri_appears_e0429a62 appears twice. The other line is game/History/Act_1.rpy:64
+
+File "game/mod_assets/History/Act_1.rpy", line 72: Line with id Act_1_yuri_appears_68c1dc04 appears twice. The other line is game/History/Act_1.rpy:66
+
+File "game/mod_assets/History/Act_1.rpy", line 73: Line with id Act_1_yuri_appears_8bf5ca12 appears twice. The other line is game/History/Act_1.rpy:67
+
+File "game/mod_assets/History/Act_1.rpy", line 74: Line with id Act_1_yuri_appears_a20cefa7 appears twice. The other line is game/History/Act_1.rpy:68
+
+File "game/mod_assets/History/Act_1.rpy", line 75: Line with id Act_1_yuri_appears_451e314b appears twice. The other line is game/History/Act_1.rpy:69
+
+File "game/mod_assets/History/Act_1.rpy", line 77: Line with id Act_1_yuri_appears_ed8a5946 appears twice. The other line is game/History/Act_1.rpy:71
+
+File "game/mod_assets/History/Act_1.rpy", line 78: Line with id Act_1_yuri_appears_5c42cad4 appears twice. The other line is game/History/Act_1.rpy:72
+
+File "game/mod_assets/History/Act_1.rpy", line 80: Line with id Act_1_yuri_appears_da2a3ea8 appears twice. The other line is game/History/Act_1.rpy:74
+
+File "game/mod_assets/History/Act_1.rpy", line 81: Line with id Act_1_yuri_appears_2a38b47f appears twice. The other line is game/History/Act_1.rpy:75
+
+File "game/mod_assets/History/Act_1.rpy", line 82: Line with id Act_1_yuri_appears_031b909c appears twice. The other line is game/History/Act_1.rpy:76
+
+File "game/mod_assets/History/Act_1.rpy", line 84: Line with id Act_1_yuri_appears_d2e0c2a9 appears twice. The other line is game/History/Act_1.rpy:78
+
+File "game/mod_assets/History/Act_1.rpy", line 86: Line with id Act_1_yuri_appears_c69f958d appears twice. The other line is game/History/Act_1.rpy:80
+
+File "game/mod_assets/History/Act_1.rpy", line 87: Line with id Act_1_yuri_appears_ea7d367c appears twice. The other line is game/History/Act_1.rpy:81
+
+File "game/mod_assets/History/Act_1.rpy", line 89: Line with id Act_1_yuri_appears_71a86863 appears twice. The other line is game/History/Act_1.rpy:83
+
+File "game/mod_assets/History/Act_1.rpy", line 91: Line with id Act_1_yuri_appears_385b1d74 appears twice. The other line is game/History/Act_1.rpy:85
+
+File "game/mod_assets/History/Act_1.rpy", line 93: Line with id Act_1_yuri_appears_2b35b6fe appears twice. The other line is game/History/Act_1.rpy:87
+
+File "game/mod_assets/History/Act_1.rpy", line 95: Line with id Act_1_yuri_appears_f1122efa appears twice. The other line is game/History/Act_1.rpy:89
+
+File "game/mod_assets/History/Act_1.rpy", line 98: Line with id Act_1_yuri_appears_d20ac6dc appears twice. The other line is game/History/Act_1.rpy:92
+
+File "game/mod_assets/History/Act_1.rpy", line 99: Line with id Act_1_yuri_appears_55237e34 appears twice. The other line is game/History/Act_1.rpy:93
+
+File "game/mod_assets/History/Act_1.rpy", line 101: Line with id Act_1_yuri_appears_511d4a88 appears twice. The other line is game/History/Act_1.rpy:95
+
+File "game/mod_assets/History/Act_1.rpy", line 103: Line with id Act_1_yuri_appears_bc7e4bf1 appears twice. The other line is game/History/Act_1.rpy:97
+
+File "game/mod_assets/History/Act_1.rpy", line 105: Line with id Act_1_yuri_appears_2b35b6fe_1 appears twice. The other line is game/History/Act_1.rpy:99
+
+File "game/mod_assets/History/Act_1.rpy", line 106: Line with id Act_1_yuri_appears_eda4e022 appears twice. The other line is game/History/Act_1.rpy:100
+
+File "game/mod_assets/History/Act_1.rpy", line 108: Line with id Act_1_yuri_appears_5506b6fe appears twice. The other line is game/History/Act_1.rpy:102
+
+File "game/mod_assets/History/Act_1.rpy", line 109: Line with id Act_1_yuri_appears_18d8a37d appears twice. The other line is game/History/Act_1.rpy:103
+
+File "game/mod_assets/History/Act_1.rpy", line 111: Line with id Act_1_yuri_appears_f2614136 appears twice. The other line is game/History/Act_1.rpy:105
+
+File "game/mod_assets/History/Act_1.rpy", line 112: Line with id Act_1_yuri_appears_13c55c0e appears twice. The other line is game/History/Act_1.rpy:106
+
+File "game/mod_assets/History/Act_1.rpy", line 115: Line with id Act_1_yuri_appears_a682bdf9 appears twice. The other line is game/History/Act_1.rpy:109
+
+File "game/mod_assets/History/Act_1.rpy", line 116: Line with id Act_1_yuri_appears_a20cefa7_1 appears twice. The other line is game/History/Act_1.rpy:110
+
+File "game/mod_assets/History/Act_1.rpy", line 117: Line with id Act_1_yuri_appears_da37f7a1 appears twice. The other line is game/History/Act_1.rpy:111
+
+File "game/mod_assets/History/Act_1.rpy", line 118: Line with id Act_1_yuri_appears_0abe13c5 appears twice. The other line is game/History/Act_1.rpy:112
+
+File "game/mod_assets/History/Act_1.rpy", line 119: Line with id Act_1_yuri_appears_ca183601 appears twice. The other line is game/History/Act_1.rpy:113
+
+File "game/mod_assets/History/Act_1.rpy", line 120: Line with id Act_1_yuri_appears_fed3f367 appears twice. The other line is game/History/Act_1.rpy:114
+
+File "game/mod_assets/History/Act_1.rpy", line 121: Line with id Act_1_yuri_appears_f2b70ddf appears twice. The other line is game/History/Act_1.rpy:115
+
+File "game/mod_assets/History/Act_1.rpy", line 122: Line with id Act_1_yuri_appears_c2b87c70 appears twice. The other line is game/History/Act_1.rpy:116
+
+File "game/mod_assets/History/Act_1.rpy", line 123: Line with id Act_1_yuri_appears_71a86863_1 appears twice. The other line is game/History/Act_1.rpy:117
+
+File "game/mod_assets/History/Act_1.rpy", line 126: Line with id Act_1_yuri_appears_c60c5441 appears twice. The other line is game/History/Act_1.rpy:118
+
+File "game/mod_assets/History/Act_1.rpy", line 128: Line with id Act_1_yuri_appears_fc571ba4 appears twice. The other line is game/History/Act_1.rpy:120
+
+File "game/mod_assets/History/Act_1.rpy", line 129: Line with id Act_1_yuri_appears_03a9ba11 appears twice. The other line is game/History/Act_1.rpy:121
+
+File "game/mod_assets/History/Act_1.rpy", line 130: Line with id Act_1_yuri_appears_1be82ba3 appears twice. The other line is game/History/Act_1.rpy:122
+
+File "game/mod_assets/History/Act_1.rpy", line 131: Line with id Act_1_yuri_appears_604ddb67 appears twice. The other line is game/History/Act_1.rpy:123
+
+File "game/mod_assets/History/Act_1.rpy", line 132: Line with id Act_1_yuri_appears_9fbc6b28 appears twice. The other line is game/History/Act_1.rpy:124
+
+File "game/mod_assets/History/Act_1.rpy", line 133: Line with id Act_1_yuri_appears_71a86863_2 appears twice. The other line is game/History/Act_1.rpy:125
+
+File "game/mod_assets/History/Act_1.rpy", line 134: Line with id Act_1_yuri_appears_59598c35 appears twice. The other line is game/History/Act_1.rpy:126
+
+File "game/mod_assets/History/Act_1.rpy", line 135: Line with id Act_1_yuri_appears_d2264367 appears twice. The other line is game/History/Act_1.rpy:127
+
+File "game/mod_assets/History/Act_1.rpy", line 136: Line with id Act_1_yuri_appears_6eeb72d7 appears twice. The other line is game/History/Act_1.rpy:128
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Wed Jul 22 06:56:52 2026
+Thu Jul 23 09:34:45 2026
